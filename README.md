@@ -100,6 +100,8 @@ https://git-lfs.github.com/
 
 https://git-lfs.github.com/
 
+clone代码时需要使用git lfs clone
+
 举例：
 
 ```bash
