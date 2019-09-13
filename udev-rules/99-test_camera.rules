@@ -1,0 +1,10 @@
+
+DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb1/1-8/1-8:1.0/video4linux/*" SYMLINK="videoUSB-1"
+
+DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.0/video4linux/*" SYMLINK="videoUSB-2"
+
+DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb2/2-7/2-7:1.0/video4linux/*" SYMLINK="videoUSB-3"
+
+DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb2/2-5/2-5:1.0/video4linux/*" SYMLINK="videoUSB-4"
+
+DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/*" SYMLINK+="videoHUB-4"

@@ -1,0 +1,5 @@
+<?xml version="1.0"?> 
+<!-- 启动机器人rviz位置模拟器 -->
+<launch>
+	<include file = "$(find explorer_big_arm_description)/launch/display.launch"/>
+</launch>

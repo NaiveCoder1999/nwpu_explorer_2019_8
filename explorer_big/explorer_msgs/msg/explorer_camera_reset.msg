@@ -1,0 +1,2 @@
+bool front_camera_reset
+bool rear_camera_reset

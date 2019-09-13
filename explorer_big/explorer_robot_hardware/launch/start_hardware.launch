@@ -1,0 +1,18 @@
+<?xml version="1.0"?> 
+<launch>
+	<rosparam file="$(find explorer_robot_hardware)/config/explorer_arm_controller.yaml" command="load" />
+	<node name="explorer_arm_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="explorer_arm_controller" />
+	<rosparam file="$(find explorer_robot_hardware)/config/explorer_vice_wheel_controller.yaml" command="load" />
+	<node name="explorer_vice_wheel_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="explorer_vice_wheel_controller" />
+	<rosparam file="$(find explorer_robot_hardware)/config/explorer_drive_controller.yaml" command="load" />
+	<node name="explorer_drive_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="explorer_drive_controller" />
+	<rosparam file="$(find explorer_robot_hardware)/config/explorer_camera_controller.yaml" command="load" />
+	<node name="explorer_camera_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="explorer_camera_controller" />
+	<!--启动joint_state_publisher /-->
+	<rosparam file="$(find explorer_robot_hardware)/config/explorer_joint_state_controller.yaml" command="load" />
+	<node name="explorer_joint_state_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="explorer_joint_state_controller" />
+	<!--rosparam file="$(find explorer_robot_hardware)/config/explorer_hardware_config.yaml" /-->
+	<node name="explorer_robot_hardware" pkg="explorer_robot_hardware" type="explorer_hardware" output="screen">
+
+	</node>
+</launch>

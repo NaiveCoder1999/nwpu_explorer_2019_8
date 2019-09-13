@@ -1,0 +1,33 @@
+
+explorer_camera_controller:
+    type: "explorer_camera_controller/CameraController"
+    joints:
+        - front_camera_left_right_joint
+        - front_camera_up_down_joint
+        - rear_camera_left_right_joint
+        - rear_camera_up_down_joint
+
+    reset:
+        front_camera_left_right_joint: 0.0
+        front_camera_up_down_joint: 0.0
+        rear_camera_left_right_joint: 0.0
+        rear_camera_up_down_joint: 0.0
+
+    left_limit:
+        front_camera_left_right_joint: -1.57
+        front_camera_up_down_joint: -0.785
+        rear_camera_left_right_joint: -1.57
+        rear_camera_up_down_joint: -0.785
+
+    right_limit:
+        front_camera_left_right_joint: 1.57
+        front_camera_up_down_joint: 0.785
+        rear_camera_left_right_joint: 1.57
+        rear_camera_up_down_joint: 0.785
+
+    speed_limit:
+        front_camera_left_right_joint: 0.3
+        front_camera_up_down_joint: 0.3
+        rear_camera_left_right_joint: 0.3
+        rear_camera_up_down_joint: 0.3
+

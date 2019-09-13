@@ -1,0 +1,12 @@
+<library path="lib/libexplorer_camera_controller">
+
+  <class 
+  name="explorer_camera_controller/CameraController" 
+  type="explorer_camera_controller::CameraController" 
+  base_class_type="controller_interface::ControllerBase">
+    <description>
+      The camera controller
+    </description>
+  </class>
+
+</library>
